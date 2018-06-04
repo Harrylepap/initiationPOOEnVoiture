@@ -61,10 +61,26 @@ namespace DebutEnPOO
 
 
             ///OUTPUT
-            Console.WriteLine(evoque.Vitesse);
-            Console.WriteLine(bmw.Vitesse);
+            Console.WriteLine("Vitesse de mon evoque de depart : "+evoque.Vitesse);
+            Console.WriteLine("Vitesse de ma BMW de depart : "+bmw.Vitesse);
+            evoque.ralentir();
+            bmw.avancer();
+            Console.WriteLine("Soudain, la BMW accelere rapidement");
+            bmw.avancer();
+            bmw.avancer();
+            Console.WriteLine("Vitesse de mon evoque après ralentissement : " + evoque.Vitesse);
+            Console.WriteLine("Vitesse de mon BMW après ralentissement : " + evoque.Vitesse);
 
             Console.ReadLine();
+        }
+
+        public int avancer()
+        {
+            return this.Vitesse = this.Vitesse + 10;
+        }
+        public int ralentir()
+        {
+            return this.Vitesse = this.Vitesse - 10;
         }
     }
 }
