@@ -54,8 +54,17 @@ namespace DebutEnPOO
         static void Main(string[] args)
         {
             ///DATA
+            Voiture evoque = new Voiture();
+            Voiture bmw = new Voiture(10);
+
             ///TRAITEMENT
+
+
             ///OUTPUT
+            Console.WriteLine(evoque.Vitesse);
+            Console.WriteLine(bmw.Vitesse);
+
+            Console.ReadLine();
         }
     }
 }
